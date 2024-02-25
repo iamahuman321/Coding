@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
                         <a href="Biomes.html" class="dropbtn">Biomes</a>
                         <div class="dropdown-content drop">
                             <a href="Tropical Rainforest.html">Tropical Rainforest</a>
-                            <a href="Temperate Rainforest.html">Temperate Rainforest</a>
+                            <a href="TemperateRainforest.html">Temperate Rainforest</a>
 
                         </div>
                     </li>
@@ -44,7 +45,7 @@
             <div class="tooltip">Email: arjans.2030@isbergen.no</div>
             <button class="contact-button" data-email="arjans.2030@isbergen.no">Contact</button>
 
-        </div> 
+        </div>
         <div class="team-member">
             <img src="Harsh.jpg" alt="Harsh Sarvaiya's Profile Picture">
             <h2>Harsh Sarvaiya</h2>
@@ -53,10 +54,11 @@
             <div class="tooltip">Email: harshs.2030@isbergen.no</div>
         </div>
         <div class="team-member">
-            <img src="Patrik.jpg" alt="Pxxxatrik Sorio's Profile Picture">
+            <img src="Patrik.jpg" alt="Patrik Sorio's Profile Picture">
             <h2>Patrik Sorio</h2>
-            <p>Contributed by making a Dairama from clay and nature with one other team member named David<p>
-            <button class="contact-button" data-email="patriks.2030@isbergen.no">Contact</button>
+            <p>Contributed by making a Dairama from clay and nature with one other team member named David
+            <p>
+                <button class="contact-button" data-email="patriks.2030@isbergen.no">Contact</button>
             <div class="tooltip">Email: patriks.2030@isbergen.no</div>
         </div>
         <div class="team-member">
@@ -71,25 +73,19 @@
             <img src="Team.jpg" alt="Team's Profile Picture">
             <h2>Team</h2>
             <p>Contributed by making a Dairama from clay and nature with one other team member named Patrik.</p>
-            <button class="contact-button" data-email="davidg.2030@isbergen.no patriks.2030@isbergen.no harshs.2030@isbergen.no arjans.2030@isbergen.no">Contact</button>
+            <button class="contact-button"
+                data-email="davidg.2030@isbergen.no patriks.2030@isbergen.no harshs.2030@isbergen.no arjans.2030@isbergen.no">Contact</button>
             <div class="tooltip">Email: If you want to contact than press "contact"</div>
         </div>
     </section>
 
-<footer>
-    <div class="hr"></div>
-    <span class="ftr">&copy; 2024 Rainforest & Biomes Explore</span>
-</footer>
-<script src="script.js"></script>
+    <footer>
+        <div class="hr"></div>
+        <span class="ftr">&copy; 2024 Rainforest & Biomes Explore</span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="header.js"></script>
 </body>
-<script>
-    const contactButtons = document.querySelectorAll('.contact-button');
 
-contactButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const email = button.getAttribute('data-email');
-        window.open(`mailto:${email}`, '_blank');
-    });
-});
-</script>
-</html>
+
+</html> 

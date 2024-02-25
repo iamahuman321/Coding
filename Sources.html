@@ -1,443 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: Arial, Geneva, Helvetica, sans-serif;
+        }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik Maps', sans-serif;
-}
-
-body {
-    background-color: #0d4726;
-    /* Dark green representing rainforest */
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 90vw;
-    text-align: center;
-    height: 30px;
-    background-color: #034d22;
-    /* Dark green for nav bar */
-    align-items: center;
-    padding: 10px;
-    margin: auto;
-    border-radius: 20px;
-    border-bottom: 2px solid white;
-}
-
-nav>div {
-    width: 30rem;
-}
-
-.right ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.right ul li {
-    list-style: none;
-    font-size: large;
-}
-
-.right ul li:hover {
-    color: #c18de9;
-    transform: scale(1.2);
-    transition: transform 0.3s ease-out;
-    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-
-}
-
-.left {
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-}
-
-.first_section {
-    display: flex;
-    justify-content: space-around;
-    width: 95vw;
-    padding: 20px;
-    margin: 30px 0px;
-}
-
-.rightsection img {
-    width: 50vw;
-    border-radius: 10px;
-}
-
-.rightsection img:hover {
-    transform: scale(1.3);
-    transition: transform 0.5s ease-in-out;
-}
-
-.leftsection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.leftsection div {
-    font-size: 40px;
-}
-
-.leftsection span {
-    font-size: 40px;
-    text-shadow: 0 0 20px #1efffb, 0 0 40px #70b2d0;
-}
-
-.green {
-    color: #5cad5e;
-    /* Lighter green */
-    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-}
-
-.hr {
-    border-top: 2px solid white;
-    width: 90vw;
-    margin: auto;
-}
-
-.Intro h1 {
-    margin: 20px 90px;
-    border-bottom: 2px solid white;
-    width: 165px;
-    border-radius: 10px;
-    font-size: 30px;
-    text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-}
-
-.Intro p,
-ul {
-    margin: 5px 90px;
-    word-break: break-all;
-    text-justify: auto;
-    padding-top: 2px;
-}
-
-#myinfo {
-    line-height: 2.5rem;
-}
-
-.ftr {
-    margin: auto auto;
-    display: block;
-    width: fit-content;
-    font-size: small;
-    color: #5cad5e;
-    /* Lighter green */
-    padding: 3em;
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-}
-
-.contact-form {
-    margin: 50px auto;
-    width: 60%;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #5cad5e;
-    /* Lighter green */
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #3b7d3a;
-    /* Darker green */
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #012b0a;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 40px;
-    
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    width: 300px;
-}
-
-.dropdown-content a:hover {
-    background-color: #011800;
-    border-radius: 40px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.about-section {
-    padding: 50px 0;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    background-color: #00801c;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    width: 250px;
-    transition: transform 0.3s ease;
-    position: relative;
-}
-
-.team-member:hover {
-    transform: translateY(-70px);
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover img {
-    transform: scale(1.7);
-}
-
-.team-member h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.team-member p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.contact-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background-color: #555;
-}
-
-.tooltip {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.tooltip:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
-    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-}
-
-.team-member:hover .tooltip {
-    opacity: 1;
-}
-
-.team{
-    width: 1200px;
-
-}
-
-.team img{
-    width: 800px;
-    height: 300px;
-    border-radius: 100px;
-}
-
-.biomes-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #275932;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    }
-
-.biome-card {
-    background-color: #00801c;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-.biomes-section hover{
-    transform: scale(9000000);
-
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.biome-card:hover {
-    transform: scale(1.8);
-}
-
-.biome-card h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.biome-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.biomes-section img {
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    padding-top: 20px;
-}
-
-.biomes-section img:hover{
-    transform: scale(1.5);
-    transition-duration: 0.3s;
-
-
-}
-
-.explore-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-
-}
-
-.explore-button a {
-    color: #fff;
-}
-
-.explore-button:hover {
-    background-color: #0056b3;
-}
-
-.explore-button a {
-    text-decoration: none;
-
-
-}
-
-       .body{
-        font-family: Arial, Geneva, Helvetica, sans-serif;
-
-       }
-        
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -466,14 +39,13 @@ nav ul li {
             color: #ffffff;
             font-family: Arial, Geneva, Helvetica, sans-serif;
             font-size: large;
-            
-
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -502,7 +74,7 @@ nav ul li {
         }
 
         .content ul li {
-            margin-bottom: 10px;
+            margin-bottom: 30px; /* Increased spacing between bibliography entries */
             transition: color 0.3s ease;
         }
 
@@ -513,32 +85,10 @@ nav ul li {
         .content ul li a {
             color: #ffffff;
         }
-        
     </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="left">Rainforest Explorer</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Biomes</a>
-                        <div class="dropdown-content">
-                            <a href="Biomes.html">Biomes</a>
-                            <!-- Add additional dropdown items here -->
-                            <a href="rainforest.html">Rainforest</a>
-                            <a href="desert.html">Desert</a>
-                        </div>
-                    </li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="sources.html">Sources</a></li> <!-- Added Sources link -->
-                </ul>
-            </div>
-        </nav>
-    </header>
 
     <div class="content">
         <h1>Sources</h1>
@@ -562,5 +112,8 @@ nav ul li {
         <div class="hr"></div>
         <span class="ftr">&copy; 2024 Rainforest & Biomes Explore</span>
     </footer>
+
+    <script src="header.js"></script>
 </body>
+
 </html>

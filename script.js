@@ -11,3 +11,13 @@ contactButtons.forEach(button => {
         window.open(`mailto:${email}`, '_blank');
     });
 });
+
+// common.js
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.body.insertAdjacentHTML('afterbegin', html);
+        });
+});
+
