@@ -58,9 +58,15 @@
         <div class="hr"></div>
         <span class="ftr">&copy; 2024 Rainforest & Biomes Explore</span>
     </footer>
-    <script src="script.js"></script>
     <script src="header.js"></script>
 </body>
-
+<script>
+    contactButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const email = button.getAttribute('data-email');
+        window.open(`mailto:${email}`, '_blank');
+    });
+});
+</script>
 
 </html> 
