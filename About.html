@@ -61,6 +61,7 @@
     <script src="header.js"></script>
 </body>
 <script>
+    var contactButtons = document.querySelectorAll('button');
     contactButtons.forEach(button => {
     button.addEventListener('click', () => {
         const email = button.getAttribute('data-email');
