@@ -3,4 +3,4 @@ This is a school project about rainforest and biomes and this was my first ever 
 Other projects:
 Tic Tac Toe:
 
-fux
+fix
