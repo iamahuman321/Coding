@@ -278,7 +278,7 @@ nav ul li {
 }
 
 .team-member:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .team-member h2 {
